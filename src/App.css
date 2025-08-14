@@ -1,4 +1,4 @@
-/* Basic reset for better consistency */
+
 body {
   margin: 0;
   font-family: Arial, sans-serif;
@@ -7,7 +7,7 @@ body {
 .app-container {
   display: flex;
   flex-direction: column;
-  min-height: 100vh; /* Ensure container takes full viewport height */
+  min-height: 100vh; 
    background-image: url("https://images.unsplash.com/photo-1580063665762-762002ea39d7?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjZ8fGxpYnJhcnklMjBtYW5hZ2VtZW50JTIwc3lzdGVtfGVufDB8fDB8fHww");
   background-repeat: no-repeat;
   background-position: center ;
@@ -18,67 +18,65 @@ body {
 }
 
 .main-header {
-  background-color: #424242ff; /* Dark background for the header */
-  padding: 15px 20px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+  background-color: #424242ff;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); 
 }
 
 .nav-links {
-  list-style: none; /* Remove bullet points from list */
+  list-style: none; 
   margin: 0;
   padding: 0;
-  display: flex; /* Arrange links horizontally */
-  justify-content: flex-start; /* Align links to the left */
-  align-items: center; /* Vertically align items */
+  display: flex; 
+  justify-content: flex-start; 
+  align-items: center; 
   gap:15px;
 }
 
 .nav-links li {
-  margin-right: 25px; /* Spacing between navigation items */
+  margin-right: 25px; 
 }
 
 .nav-links li:last-child {
-  margin-right: 0; /* No margin on the last item */
+  margin-right: 0; 
 }
 
 .nav-links a {
-  color: white; /* White text for links */
-  text-decoration: none; /* Remove underline from links */
+  color: white; 
+  text-decoration: none;
   font-weight: bold;
   font-size: 1.1em;
-  transition: color 0.3s ease; /* Smooth color transition on hover */
+  transition: color 0.3s ease; 
 }
 
 .nav-links a:hover {
-  color: #007bff; /* Blue color on hover */
-}
+  color: #007bff; 
 
-/* App.css */
 
-/* Basic styling for the dropdown container */
+
+
 .dropdown {
   position: relative;
   display: inline-block;
 }
 
-/* Style for the dropdown content (the links) */
+
 .dropdown-content {
-  display: none; /* Hidden by default */
+  display: none; 
   position: absolute;
   background-color: #f9f9f9;
   min-width: 160px;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   z-index: 1;
-  top: 100%; /* Position below the "Books" link */
+  top: 100%; 
   left: 0;
 }
 
-/* Show the dropdown content when the parent dropdown is hovered */
+
 .dropdown:hover .dropdown-content {
   display: block;
 }
 
-/* Style for the links inside the dropdown */
+
 .dropdown-content a {
   color: black;
   padding: 12px 16px;
@@ -87,12 +85,12 @@ body {
   text-align: left;
 }
 
-/* Change color of dropdown links on hover */
+
 .dropdown-content a:hover {
   background-color: #ddd;
 }
 
-/* Ensure other nav-links styles don't interfere */
+
 .nav-links li {
   list-style: none;
 }
