@@ -40,9 +40,6 @@ const IssuedBooks = () => {
 
   if (loading) return <div className="loading">Loading issued books...</div>;
 
-  const overdueCount = issuedBooks.filter(b => daysSinceIssue(b.issueDate) > 14).length;
-  const activeCount = issuedBooks.length - overdueCount;
-
   return (
     <div className="issued-books-container">
       <h1 className='Books-heading'>Currently Issued Books</h1>
@@ -78,19 +75,6 @@ const IssuedBooks = () => {
             })}
           </tbody>
         </table>
-      </div>
-
-      <div className="stats-section">
-        {[
-          { label: 'Total Issued', value: issuedBooks.length },
-          { label: 'Overdue Books', value: overdueCount },
-          { label: 'Active Issues', value: activeCount }
-        ].map(stat => (
-          <div key={stat.label} className="stat-card">
-            <h3>{stat.label}</h3>
-            <p>{stat.value}</p>
-          </div>
-        ))}
       </div>
     </div>
   );

@@ -360,6 +360,46 @@ body {
   font-weight: 600;
   cursor: pointer;
 }
+.overdue-actions{
+  color:black
+}
+.category-stats {
+  margin-top: 20px;
+}
 
-/* Remaining layout, containers, and responsive design stays the same */
-/* ... you can keep all your grid, padding, and responsive rules as-is */
+.stats-grid {
+  color:black
+  display: grid; /* Use CSS Grid to create the table structure */ 
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Creates flexible columns */
+  grid-gap: 15px; /* Adjust the gap between columns and rows */
+  border: 1px solid #ccc; /* Add a border to the entire table-like grid */
+  border-radius: 5px;
+  overflow: hidden; /* Ensures borders are contained */
+}
+
+.category-stat-card {
+  color:black
+  display: contents; /* Makes the child elements behave as if they are direct children of the grid container, for better alignment */
+}
+
+.category-stat-card h4 {
+  background-color: #e05858ff; /* Header background color */
+  padding: 10px;
+  border-bottom: 1px solid #ccc;
+  text-align: left;
+  grid-column: 1 / -1; /* Make the heading span across all columns */
+}
+
+.category-stat-card p {
+  color:black;
+  padding: 10px;
+  border-bottom: 1px solid #eee;
+  text-align: left;
+}
+
+.category-stat-card p:last-child {
+  border-bottom: none; /* Remove bottom border from the last paragraph in each card for a cleaner look */
+}
+.home-text{
+  black;
+}
