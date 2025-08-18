@@ -10,12 +10,12 @@ const AddMember = () => {
     gender: 'M',
     address: ''
   });
-  const [errors, setErrors] = useState({}); // For validation messages
+  const [errors, setErrors] = useState({}); 
   const [loading, setLoading] = useState(false);
 
   const handleChange = e => {
     setMember({ ...member, [e.target.name]: e.target.value });
-    setErrors({ ...errors, [e.target.name]: '' }); // Clear error on change
+    setErrors({ ...errors, [e.target.name]: '' });
   };
 
   const validate = () => {
@@ -74,7 +74,7 @@ const AddMember = () => {
           {...extraProps}
         />
       )}
-      {errors[name] && <span className="error">{errors[name]}</span>}
+      {errors[name] && <span className="error" style={{color:"red"}}>{errors[name]}</span>}
     </div>
   );
 

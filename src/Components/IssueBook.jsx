@@ -32,7 +32,7 @@ const IssueBook = () => {
       alert(res.data);
       setSelectedBook('');
       setSelectedMember('');
-      setBooks(prev => prev.filter(b => b.bookId !== selectedBook)); // Remove issued book
+      setBooks(prev => prev.filter(b => b.bookId !== selectedBook)); 
     } catch {
       alert('Error issuing book. Try again.');
     } finally {

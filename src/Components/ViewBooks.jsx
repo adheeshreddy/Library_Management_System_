@@ -108,15 +108,7 @@ const ViewBooks = () => {
         </table>
       </div>
 
-      <div className="books-summary">
-        <h3>Books Summary</h3>
-        <div className="summary-stats">
-          <div className="summary-item"><span>Total Books:</span><span>{books.length}</span></div>
-          <div className="summary-item"><span>Available Books:</span><span>{books.filter(b => b.availability === 'A').length}</span></div>
-          <div className="summary-item"><span>Issued Books:</span><span>{books.filter(b => b.availability === 'I').length}</span></div>
-          <div className="summary-item"><span>Active Books:</span><span>{books.filter(b => b.status === 'A').length}</span></div>
-        </div>
-      </div>
+    
     </div>
   );
 };

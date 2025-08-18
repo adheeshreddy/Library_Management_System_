@@ -5,11 +5,13 @@ import '../Styles/Books.css';
 export default function AddBook() {
   const [book, setBook] = useState({ title: "", author: "", category: "", status: "A", availability: "A" });
   const [loading, setLoading] = useState(false);
-  const [errors, setErrors] = useState({}); // For validation messages
+  const [errors, setErrors] = useState({}); 
 
+
+  
   const handleChange = e => {
     setBook({ ...book, [e.target.name]: e.target.value });
-    setErrors({ ...errors, [e.target.name]: "" }); // Clear error on change
+    setErrors({ ...errors, [e.target.name]: "" }); 
   };
 
   const validate = () => {
@@ -52,7 +54,7 @@ export default function AddBook() {
         value={book[name]}
         onChange={handleChange}
       />
-      {errors[name] && <span className="error">{errors[name]}</span>}
+      {errors[name] && <span className="error" style={{color:"red"}}>{errors[name]}</span>}
     </div>
   );
 

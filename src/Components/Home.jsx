@@ -4,10 +4,6 @@ const Home = () => {
   return (
     <div className='home-text' style={{color:'black'}}>
       <h1>THIS IS HOME PAGE</h1>
-      <h1>THIS IS HOME PAGE</h1>
-      <h1>THIS IS HOME PAGE</h1>
-      <h1>THIS IS HOME PAGE</h1>
-      <h1>THIS IS HOME PAGE</h1>
     </div>
   )
 }

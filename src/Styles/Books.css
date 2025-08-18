@@ -298,6 +298,10 @@ body {
   background: #ed8936;
   color: white;
 }
+.severity-badge.low {
+  background: #35c238ff;
+  color: white;
+}
 
 /* Action Buttons */
 .action-buttons {
