@@ -98,22 +98,22 @@ function App() {
           </ul>
         </nav>
 
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/books" element={<Books />} />
-          <Route path="/books/add" element={<AddBook />} /> {/* Add this route */}
-          <Route path="/books/view" element={<ViewBooks />} /> {/* Add this route */}
-          <Route path="/member" element={<Members />} />
-          <Route path="/member/add" element={<AddMember />} />
-          <Route path="/member/view" element={<ViewMembers />} />
-          <Route path="/issues" element={<Issue />} />
-          <Route path="/issueBook" element={<IssueBook/>} />
-          <Route path="/returnBook" element={<ReturnBook/>} />
-          <Route path="/reports" element={<Reports />} />
-          <Route path="/overdueBooks" element={<OverdueBooks />} />
-          <Route path="/issuedBooks" element={<IssuedBooks/>} />
-          <Route path="/categoryBooks" element={<CategoryBooks />} />
-        </Routes>
+          <Routes>
+            <Route path="/" element={<Home />} />
+            {/* <Route path="/books" element={<Books />} /> */}
+            <Route path="/books/add" element={<AddBook />} /> {/* Add this route */}
+            <Route path="/books/view" element={<ViewBooks />} /> {/* Add this route */}
+            {/* <Route path="/member" element={<Members />} /> */}
+            <Route path="/member/add" element={<AddMember />} />
+            <Route path="/member/view" element={<ViewMembers />} />
+            {/* <Route path="/issues" element={<Issue />} /> */}
+            <Route path="/issueBook" element={<IssueBook/>} />
+            <Route path="/returnBook" element={<ReturnBook/>} />
+            {/* <Route path="/reports" element={<Reports />} /> */}
+            <Route path="/overdueBooks" element={<OverdueBooks />} />
+            <Route path="/issuedBooks" element={<IssuedBooks/>} />
+            <Route path="/categoryBooks" element={<CategoryBooks />} />
+          </Routes>
       </div>
     </Router>
   );
