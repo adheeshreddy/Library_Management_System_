@@ -4,8 +4,9 @@ Components -
 Books- 
   - Add Book
       -  Can add a new Book into the Database
-   
-        <img width="1920" height="1080" alt="Screenshot (1686)" src="https://github.com/user-attachments/assets/b4c869e7-9d36-4b8e-8870-0c5d839ca4e6" />
+
+     <img width="1920" height="1080" alt="Screenshot (1686)" src="https://github.com/user-attachments/assets/09c9f61c-2b2d-40f4-a53f-19dc8091cf5f" />
+
 
 
   - View Books
